@@ -1,0 +1,760 @@
+
+<html>
+	<head>
+		<title>中文主流新闻网站分析系统</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="/static/js/echarts.js"></script>
+		<link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="/static/css/main.css">
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container" style = "background:/static/images/pic02.jpg;">
+						<!-- Logo -->
+							<h1 id="logo"><a href="http://127.0.0.1:5000">中文主流新闻网站比较分析系统</a></h1>
+							<p>Chinese Main News Websites Analysis System </p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="http://127.0.0.1:5000"><span>首页</span></a></li>
+									<li>
+										<a href="http://127.0.0.1:5000" class="icon fa-chart-bar"><span>新闻网站</span></a>
+										<ul>
+											<li><a href="http://127.0.0.1:5000/web_1">人民网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_1">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_2">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_3">经济</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_4">社会</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_5">健康</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_2">中国新闻网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_6">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_7">时事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_8">财经</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_9">体育</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_10">娱乐</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_11">社会</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_3">光明网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_12">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_13">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_14">科技</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_15">经济</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_16">教育</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_17">体育</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_18">娱乐</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="http://127.0.0.1:5000/web_4">观察者网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_19">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_20">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_21">财经</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_22">产经</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_23">科技</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_24">汽车</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_5">澎湃新闻</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_25">时事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_26">思想</a></li>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_27">生活</a></li>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_28">财经</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_6">新浪新闻</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_29">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_30">科技</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_31">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_32">社会</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_33">娱乐</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_34">体育</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a class="icon solid fa-cog" href="#footer"><span>纠错反馈</span></a></li>
+									<li><a class="icon solid fa-retweet" href="#footer"><span>联系我们</span></a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+			<!-- Features -->
+				<section id="features">
+							<h2>昨日站内<strong>总数据</strong></h2>
+					<ul>
+						<section class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<div id="container1" style="width:600px;height:400px;"></div>
+									<script type="text/javascript">
+									var dom = document.getElementById("container1");
+									var myChart = echarts.init(dom);
+									var app = {};
+
+									var option;
+									option = {
+									  tooltip: {
+										trigger: 'axis',
+										axisPointer: {
+										  type: 'shadow'
+										}
+									  },
+									  grid: {
+										left: '3%',
+										right: '4%',
+										bottom: '3%',
+										containLabel: true
+									  },
+									  xAxis: [
+										{
+										  type: 'category',
+										  data:['人民网', '中国新闻网', '光明网', '观察者网', '澎湃新闻', '新浪网'],
+										  axisTick: {
+											alignWithLabel: true
+										  }
+										}
+									  ],
+									  yAxis: [
+										{
+										  type: 'value'
+										}
+									  ],
+									  series: [
+										{
+										  name: 'Direct',
+										  type: 'bar',
+										  barWidth: '60%',
+										  data: {{ total_news }}
+										}
+									  ]
+									};
+
+									if (option && typeof option === 'object') {
+										myChart.setOption(option);
+									}
+
+									</script>
+										<header>
+											<h3>网站单日新闻数量</h3>
+										</header>
+										<li>六个网站昨日新闻数量 , 
+										横轴为新闻网站名称，纵轴为新闻数量。</li>
+								</section>
+							</div>
+							
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+										<div id="container2" style="width: 600px;height:400px"></div>
+										<script type="text/javascript">
+											var dom = document.getElementById("container2");
+											var myChart = echarts.init(dom);
+											var app = {};
+
+											var option;
+											const posList = [
+											  'left',
+											  'right',
+											  'top',
+											  'bottom',
+											  'inside',
+											  'insideTop',
+											  'insideLeft',
+											  'insideRight',
+											  'insideBottom',
+											  'insideTopLeft',
+											  'insideTopRight',
+											  'insideBottomLeft',
+											  'insideBottomRight'
+											];
+											app.configParameters = {
+											  rotate: {
+												min: -90,
+												max: 90
+											  },
+											  align: {
+												options: {
+												  left: 'left',
+												  center: 'center',
+												  right: 'right'
+												}
+											  },
+											  verticalAlign: {
+												options: {
+												  top: 'top',
+												  middle: 'middle',
+												  bottom: 'bottom'
+												}
+											  },
+											  position: {
+												options: posList.reduce(function (map, pos) {
+												  map[pos] = pos;
+												  return map;
+												}, {})
+											  },
+											  distance: {
+												min: 0,
+												max: 100
+											  }
+											};
+											app.config = {
+											  rotate: 90,
+											  align: 'left',
+											  verticalAlign: 'middle',
+											  position: 'insideBottom',
+											  distance: 15,
+											  onChange: function () {
+												const labelOption = {
+												  rotate: app.config.rotate,
+												  align: app.config.align,
+												  verticalAlign: app.config.verticalAlign,
+												  position: app.config.position,
+												  distance: app.config.distance
+												};
+												myChart.setOption({
+												  series: [
+													{
+													  label: labelOption
+													},
+													{
+													  label: labelOption
+													},
+													{
+													  label: labelOption
+													},
+													{
+													  label: labelOption
+													}
+												  ]
+												});
+											  }
+											};
+											const labelOption = {
+											  show: true,
+											  position: app.config.position,
+											  distance: app.config.distance,
+											  align: app.config.align,
+											  verticalAlign: app.config.verticalAlign,
+											  rotate: app.config.rotate,
+											  formatter: '{c}  {name|{a}}',
+											  fontSize: 16,
+											  rich: {
+												name: {}
+											  }
+											};
+											option = {
+											  tooltip: {
+												trigger: 'axis',
+												axisPointer: {
+												  type: 'shadow'
+												}
+											  },
+											  legend: {
+												data: ['正向新闻', '负向新闻']
+											  },
+											  toolbox: {
+												show: true,
+												orient: 'vertical',
+												left: 'right',
+												top: 'center',
+												feature: {
+												  mark: { show: true },
+												  dataView: { show: true, readOnly: false },
+												  magicType: { show: true, type: ['line', 'bar', 'stack'] },
+												  restore: { show: true },
+												  saveAsImage: { show: true }
+												}
+											  },
+											  xAxis: [
+												{
+												  type: 'category',
+												  axisTick: { show: false },
+												  data: ['人民网', '中国新闻网', '光明网', '观察者网', '澎湃新闻', '新浪新闻']
+												}
+											  ],
+											  yAxis: [
+												{
+												  type: 'value'
+												}
+											  ],
+											  series: [
+												{
+												  name: '正向新闻',
+												  type: 'bar',
+												  label: labelOption,
+												  emphasis: {
+													focus: 'series'
+												  },
+												  data: {{ total_posi }}
+												},
+												{
+												  name: '负向新闻',
+												  type: 'bar',
+												  label: labelOption,
+												  emphasis: {
+													focus: 'series'
+												  },
+												  data: {{ total_nega }}
+												},
+											  ]
+											};
+
+											if (option && typeof option === 'object') {
+												myChart.setOption(option);
+											}
+
+										</script>
+										<header>
+											<h3>网站单日情感正负向新闻数量</h3>
+										</header>
+										<li>六个网站昨日新闻正负向数量 ，横轴为新闻网站名称，纵轴为正向及负向的新闻数量，
+										蓝色代表正向新闻，绿色代表负向新闻。</li>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+									<div id="container3" style="width: 550px;height:400px"></div>	
+										<script type="text/javascript">
+										var dom = document.getElementById("container3");
+										var myChart = echarts.init(dom);
+										var app = {};
+
+										var option;
+										option = {
+										  tooltip: {
+											trigger: 'axis'
+										  },
+										  legend: {
+											data: ['文本长度']
+										  },
+										  grid: {
+											left: '3%',
+											right: '4%',
+											bottom: '3%',
+											containLabel: true
+										  },
+										  toolbox: {
+											feature: {
+											  mark: { show: true },
+											  magicType: { show: true, type: ['line', 'bar'] },
+											  restore: { show: true },
+											  saveAsImage: { show: true }
+											}
+										  },
+										  xAxis: {
+											type: 'category',
+											boundaryGap: false,
+											data: ['人民网', '中国新闻网', '光明网', '观察者网', '澎湃新闻', '新浪新闻']
+										  },
+										  yAxis: {
+											type: 'value'
+										  },
+										  series: [
+											{
+											  name: '文本长度',
+											  type: 'line',
+											  stack: 'Total',
+											  data: {{ avr_len }}
+											}
+										  ]
+										};
+
+										if (option && typeof option === 'object') {
+											myChart.setOption(option);
+										}
+
+												</script>
+										<header>
+											<h3>网站单日平均文本长度</h3>
+										</header>
+										<li>六个网站昨日新闻平均长度 ，横轴为新闻网站名称，纵轴为文本长度。</li>
+									</section>
+							</div>
+						</section>
+					</ul>
+
+
+					<h2>近七日站内<strong>总数据</strong></h2>
+					<ul>
+						<div class="row aln-center">
+							<div>
+								<section>
+									<div id="container4" style="width:1200px;height:400px;"></div>
+									<script type="text/javascript">
+									var dom = document.getElementById("container4");
+									var myChart = echarts.init(dom);
+									var app = {};
+
+									var option;
+									option = {
+									  title: {
+										text: '各网站七日平均情感值变化'
+									  },
+									  tooltip: {
+										trigger: 'axis'
+									  },
+									  legend: {
+										data: ['人民网', '中国新闻网', '光明网', '观察者网', '澎湃新闻', '新浪网']
+									  },
+									  grid: {
+										left: '3%',
+										right: '4%',
+										bottom: '3%',
+										containLabel: true
+									  },
+									  toolbox: {
+										feature: {
+										  saveAsImage: {}
+										}
+									  },
+									  xAxis: {
+										type: 'category',
+										boundaryGap: false,
+										data:  ['04-20', '04-21', '04-22', '04-23', '04-24', '04-25', '04-26']
+									  },
+									  yAxis: {
+										type: 'value'
+									  },
+									  series: [
+										{
+										  name: '人民网',
+										  type: 'line',
+										  stack: 'Total',
+										  data: {{senti[0]}}
+										},
+										{
+										  name: '中国新闻网',
+										  type: 'line',
+										  stack: 'Total',
+										  data: {{senti[1]}}
+										},
+										{
+										  name: '光明网',
+										  type: 'line',
+										  stack: 'Total',
+										  data:  {{senti[2]}}
+										},
+										{
+										  name:'观察者网',
+										  type: 'line',
+										  stack: 'Total',
+										  data: {{senti[3]}}
+										},
+										{
+										  name:  '澎湃新闻', 
+										  type: 'line',
+										  stack: 'Total',
+										  color:'#9a60b4',
+										  data: {{senti[4]}}
+										},
+										{
+										  name: '新浪网',
+										  type: 'line',
+										  stack: 'Total',
+										  color:'#3ba272', 
+										  data: {{senti[5]}}
+										}
+									  ]
+									};
+
+									if (option && typeof option === 'object') {
+										myChart.setOption(option);
+									}
+
+											</script>
+										<header>
+											<h3>各网站七日平均情感值变化</h3>
+										</header>
+										<li>各网站七日平均情感值变化 , 
+										横轴为日期，纵轴为情感平均值。</li>
+								</section>
+							</div>
+							
+						</div>
+					</ul>
+					<ul>
+						<div class="row aln-center">
+							<div>
+								<section>
+									<div id="container5" style="width:1200px;height:400px;"></div>
+									<script type="text/javascript">
+									var dom = document.getElementById("container5");
+									var myChart = echarts.init(dom);
+									var app = {};
+									var option;
+									option = {
+									  color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
+									  title: {
+										text: '各网站七日平均文本长度变化'
+									  },
+									  tooltip: {
+										trigger: 'axis',
+										axisPointer: {
+										  type: 'cross',
+										  label: {
+											backgroundColor: '#6a7985'
+										  }
+										}
+										},
+									  xAxis: {
+										type: 'category',
+										data: ['04-20', '04-21', '04-22', '04-23', '04-24', '04-25', '04-26']
+									  },
+									  yAxis: {
+										type: 'value'
+									  },
+									  series: [
+										{
+										  name: '人民网',
+										  data: {{cont_len[0]}},
+										  type: 'line'
+										},
+										{
+										  name: '中国新闻网',
+										  data: {{cont_len[1]}},
+										  type: 'line'
+										},
+										{
+										   name: '光明网',
+										  data: {{cont_len[2]}},
+										  type: 'line'
+										},
+										{
+										  name: '观察者网',
+										  data: {{cont_len[3]}},
+										  type: 'line'
+										},
+										{
+										  name: '澎湃新闻',
+										  data: {{cont_len[4]}},
+										  type: 'line'
+										},
+										{
+										  name: '新浪新闻',
+										  data: {{cont_len[5]}},
+										  type: 'line'
+										}
+									  ]
+									};
+
+									if (option && typeof option === 'object') {
+										myChart.setOption(option);
+									}
+									</script>
+										<header>
+											<h3>各网站七日平均文本长度变化</h3>
+										</header>
+										<li>各网站七日平均文本长度变化 , 
+										横轴为日期，纵轴为文本长度平均值。</li>
+								</section>
+							</div>
+							
+						</div>
+					</ul>
+					
+
+					<div >
+								<ul class="actions">
+									<li><a href="#header" class="button icon solid fa-file">回到顶端</a></li>
+								</ul>
+							</div>
+				</section>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="container">
+						<p> <strong>数据来源：六个中文主流新闻网站</strong></p>
+						<h3>点击下方链接进行跳转</h3>
+					</div>
+				</section>
+			
+			<section id="features">
+					<ul>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<a href="http://127.0.0.1:5000/web_1" class="image left"><img src="/static/images/renmin.jpg" alt="" />
+									</a>
+									
+										<header>
+												<h1><a href="http://127.0.0.1:5000/web_1">人民网</a></h1>
+											</header>
+										<p>创办于1997年，世界十大报纸之一。建设以新闻为主的大型网上信息交互平台，是国际互联网上最大的综合性网络媒体之一。</p>
+								</section>
+							</div>
+							
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+										<a href="http://127.0.0.1:5000/web_2" class="image left"><img src="/static/images/zgxw.jpg" alt="" />
+									</a>
+										<header>
+											<h1><a href="http://127.0.0.1:5000/web_2">中国新闻网</a></h1>
+										</header>
+										<p>由中国新闻社主办，为中央重点新闻网站。2020年8月17日，国家互联网信息办公室下发通知，将中国新闻网纳入中央重点新闻网站序列。</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+										<a href="http://127.0.0.1:5000/web_3" class="image left"><img src="/static/images/gm.jpg" alt="" />
+									</a>
+										<header>
+											<h1><a href="http://127.0.0.1:5000/web_3">光明网</a></h1>
+										</header>
+										<p>由中国新闻社主办，为中央重点新闻网站。2020年8月17日，国家互联网信息办公室下发通知，将中国新闻网纳入中央重点新闻网站序列。</p>
+									</section>
+							</div>
+						</div>
+					</ul>
+					<ul>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<a href="http://127.0.0.1:5000/web_4" class="image left"><img src="/static/images/gcz.jpg" alt="" />
+									</a>
+									
+										<header>
+												<h1><a href="http://127.0.0.1:5000/web_4">观察者网</a></h1>
+											</header>
+										<p>上海观察者信息技术有限公司和上海春秋发展战略研究院联合主办的新闻时评集成网站（online news and comments aggregator）。</p>
+										<p>旨在以即时综合资讯和特色原创内容为全球中文阅读者提供时政事件的深度报道以及思想领域的全面解读。</p>
+								</section>
+							</div>
+							
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+										<a href="http://127.0.0.1:5000/web_5" class="image left"><img src="/static/images/pp.jpg" alt="" />
+									</a>
+										<header>
+											<h1><a href="http://127.0.0.1:5000/web_5">澎湃新闻</a></h1>
+										</header>
+										<p>“澎湃新闻”是一个以原创新闻为主的全媒体新闻资讯平台，拥有互联网新闻信息服务一类资质，7*24小时为中国互联网用户生产、聚合优质时政思想财经文化类内容。</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+										<a href="http://127.0.0.1:5000/web_5" class="image left"><img src="/static/images/sina.jpg" alt="" />
+									</a>
+										<header>
+											<h1><a href="http://127.0.0.1:5000/web_5">新浪新闻</a></h1>
+										</header>
+										<p>新浪网是新浪网的门户网站,为亿万用户打造一个手机联通世界的超级平台,提供24小时全面及时的中文资讯,内容覆盖国内外突发新闻事件、体坛赛事、娱乐时尚、产业资讯、实用信息等。</p>
+									</section>
+							</div>
+						</div>
+					</ul>
+
+
+				</section>
+				
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="col-12">
+								<ul class="actions">
+									<li><a href="#header" class="button icon solid fa-file">回到顶端</a></li>
+								</ul>
+							</div>
+						<header>
+							<h2>纠错反馈？<strong>填写表单:</strong></h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-small">
+												<input name="name" placeholder="姓名" type="text" />
+											</div>
+											<div class="col-6 col-12-small">
+												<input name="email" placeholder="邮箱" type="text" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="反馈内容"></textarea>
+											</div>
+											<div class="col-12">
+												<a href="#" class="form-button-submit button icon solid fa-envelope">反馈</a>
+											</div>
+										</div>
+									</form>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+									<p>如果您有关于此网站更多更好的建议或反馈希望与我们进一步沟通，欢迎随时通过下方联系方式联系我们。我们将十分感激。</p>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon solid fa-home">
+													朝阳区中国传媒大学<br />
+													中蓝大学生公寓<br />
+													中国,北京
+												</li>
+												<li class="icon solid fa-phone">
+													(86)151-****-****
+												</li>
+												<li class="icon solid fa-envelope">
+													fridazyq17@*****.com
+												</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon brands fa-twitter">
+													@f*******
+												</li>
+												<li class="icon brands fa-instagram">
+													instagram.com/f*******
+												</li>
+												<li class="icon brands fa-dribbble">
+													dribbble.com/f*******
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; Untitled. All rights reserved.</li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/jquery.dropotron.min.js"></script>
+			<script src="/static/js/browser.min.js"></script>
+			<script src="/static/js/breakpoints.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<script src="/static/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ web_name }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="/static/js/echarts.js"></script>
+		<link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="/static/css/main.css">
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo">{{ web_name }}</h1>
+						<p><a href={{web_link}}>{{web_link}} </a></p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="http://127.0.0.1:5000"><span>首页</span></a></li>
+									<li>
+										<a href="http://127.0.0.1:5000" class="icon fa-chart-bar"><span>新闻网站</span></a>
+										<ul>
+											<li><a href="http://127.0.0.1:5000/web_1">人民网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_1">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_2">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_3">经济</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_4">社会</a></li>
+													<li><a href="http://127.0.0.1:5000/web_1/sec_5">健康</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_2">中国新闻网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_6">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_7">时事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_8">财经</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_9">体育</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_10">娱乐</a></li>
+													<li><a href="http://127.0.0.1:5000/web_2/sec_11">社会</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_3">光明网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_12">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_13">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_14">科技</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_15">经济</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_16">教育</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_17">体育</a></li>
+													<li><a href="http://127.0.0.1:5000/web_3/sec_18">娱乐</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="http://127.0.0.1:5000/web_4">观察者网</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_19">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_20">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_21">财经</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_22">产经</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_23">科技</a></li>
+													<li><a href="http://127.0.0.1:5000/web_4/sec_24">汽车</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_5">澎湃新闻</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_25">时事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_26">思想</a></li>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_27">生活</a></li>
+													<li><a href="http://127.0.0.1:5000/web_5/sec_28">财经</a></li>
+												</ul>
+											</li>
+											<li><a href="http://127.0.0.1:5000/web_6">新浪新闻</a>
+												<ul>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_29">军事</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_30">科技</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_31">国际</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_32">社会</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_33">娱乐</a></li>
+													<li><a href="http://127.0.0.1:5000/web_6/sec_34">体育</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a class="icon solid fa-cog" href="#footer"><span>纠错反馈</span></a></li>
+									<li><a class="icon solid fa-retweet" href="#footer"><span>联系我们</span></a></li>
+								</ul>
+							</nav>
+					</div>
+				</section>
+
+
+
+
+			<section id="features">
+							<h2>昨日板块内<strong>总数据</strong></h2>
+					<ul>
+						<section class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+								<section>
+
+									<div id="container7" style="width:600px;height:400px;"></div>
+										 <script type="text/javascript">
+											var dom = document.getElementById("container7");
+											var myChart = echarts.init(dom);
+											var app = {};
+
+											var option;
+											option = {
+											  tooltip: {
+												trigger: 'axis',
+												axisPointer: {
+												  type: 'shadow'
+												}
+											  },
+											  grid: {
+												left: '3%',
+												right: '4%',
+												bottom: '3%',
+												containLabel: true
+											  },
+											  xAxis: [
+												{
+												  type: 'category',
+												  data: ["国际", "军事", "经济", "社会", "健康"],
+												  axisTick: {
+													alignWithLabel: true
+												  }
+												}
+											  ],
+											  yAxis: [
+												{
+												  type: 'value'
+												}
+											  ],
+											  series: [
+												{
+												  name: 'Direct',
+												  type: 'bar',
+												  barWidth: '60%',
+												  data: {{ sec_num }}
+												}
+											  ]
+											};
+
+											if (option && typeof option === 'object') {
+												myChart.setOption(option);
+											}
+
+													</script>
+										<header>
+											<h3>各个板块的新闻数量</h3>
+										</header>
+										<li>数据分为情感分析值，新闻数量以及文本长度三种。横轴为新闻网站名称。</li>
+									</section>
+							</div>
+
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+									<div id="container8" style="width: 550px;height:400px"></div>
+										<script type="text/javascript">
+										var dom = document.getElementById("container8");
+										var myChart = echarts.init(dom);
+										var app = {};
+
+										var option;
+										option = {
+										  tooltip: {
+											trigger: 'axis'
+										  },
+										  legend: {
+											data: ['情感数值']
+										  },
+										  grid: {
+											left: '3%',
+											right: '4%',
+											bottom: '3%',
+											containLabel: true
+										  },
+										  toolbox: {
+											feature: {
+											  mark: { show: true },
+											  magicType: { show: true, type: ['line', 'bar'] },
+											  restore: { show: true },
+											  saveAsImage: { show: true }
+											}
+										  },
+										  xAxis: {
+											type: 'category',
+											boundaryGap: false,
+											data: ["国际", "军事", "经济", "社会", "健康"]
+										  },
+										  yAxis: {
+											type: 'value'
+										  },
+										  series: [
+											{
+											  name: '情感数值',
+											  type: 'line',
+											  stack: 'Total',
+											  data: {{ sec_senti }}
+											}
+										  ]
+										};
+
+										if (option && typeof option === 'object') {
+											myChart.setOption(option);
+										}
+
+												</script>
+										<header>
+											<h3>各个板块的情感数值</h3>
+										</header>
+										<li>六个网站昨日新闻平均长度 ，横轴为新闻板块名称，纵轴为情感数值。</li>
+									</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<!-- Feature -->
+									<section>
+									<div id="container9" style="width: 550px;height:400px"></div>
+										<script type="text/javascript">
+										var dom = document.getElementById("container9");
+										var myChart = echarts.init(dom);
+										var app = {};
+
+										var option;
+										option = {
+										  tooltip: {
+											trigger: 'axis'
+										  },
+										  legend: {
+											data: ['文本长度']
+										  },
+										  grid: {
+											left: '3%',
+											right: '4%',
+											bottom: '3%',
+											containLabel: true
+										  },
+										  toolbox: {
+											feature: {
+											  mark: { show: true },
+											  magicType: { show: true, type: ['line', 'bar'] },
+											  restore: { show: true },
+											  saveAsImage: { show: true }
+											}
+										  },
+										  xAxis: {
+											type: 'category',
+											boundaryGap: false,
+											data: ["国际", "军事", "经济", "社会", "健康"]
+										  },
+										  yAxis: {
+											type: 'value'
+										  },
+										  series: [
+											{
+											  name: '文本长度',
+											  type: 'line',
+											  stack: 'Total',
+											  data: {{ sec_cont }}
+											}
+										  ]
+										};
+
+										if (option && typeof option === 'object') {
+											myChart.setOption(option);
+										}
+
+												</script>
+										<header>
+											<h3>各个板块的平均文本长度</h3>
+										</header>
+										<li>六个网站昨日新闻平均长度 ，横轴为新闻网站名称，纵轴为文本长度。</li>
+									</section>
+							</div>
+						</section>
+					</ul>
+				</section>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="container">
+						<p> <strong>前往站内各板块</strong></p>
+						<h3>点击下方链接进行跳转</h3>
+						<article class="box post">
+								<ul class="actions">
+									{% for s in sec_list %}
+										<li><a href="http://127.0.0.1:5000/web_{{id}}/sec_{{s[1]}}" class="button icon solid fa-file">{{s[0]}}</a></li>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									{% endfor %}
+								</ul>
+								</article>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="col-12">
+								<ul class="actions">
+									<li><a href="#header" class="button icon solid fa-file">回到顶端</a></li>
+								</ul>
+							</div>
+						<header>
+							<h2>纠错反馈？<strong>填写表单:</strong></h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-small">
+												<input name="name" placeholder="姓名" type="text" />
+											</div>
+											<div class="col-6 col-12-small">
+												<input name="email" placeholder="邮箱" type="text" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="反馈内容"></textarea>
+											</div>
+											<div class="col-12">
+												<a href="#header" class="form-button-submit button icon solid fa-envelope">反馈</a>
+											</div>
+										</div>
+									</form>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+									<p>如果您有关于此网站更多更好的建议或反馈希望与我们进一步沟通，欢迎随时通过下方联系方式联系我们。我们将十分感激。</p>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon solid fa-home">
+													朝阳区中国传媒大学<br />
+													中蓝大学生公寓<br />
+													中国,北京
+												</li>
+												<li class="icon solid fa-phone">
+													(86)151-****-****
+												</li>
+												<li class="icon solid fa-envelope">
+													fridazyq17@*****.com
+												</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon brands fa-twitter">
+													@f*******
+												</li>
+												<li class="icon brands fa-instagram">
+													instagram.com/f*******
+												</li>
+												<li class="icon brands fa-dribbble">
+													dribbble.com/f*******
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; Untitled. All rights reserved.</li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/jquery.dropotron.min.js"></script>
+			<script src="/static/js/browser.min.js"></script>
+			<script src="/static/js/breakpoints.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<script src="/static/js/main.js"></script>
+
+	</body>
+</html>
